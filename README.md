@@ -1,7 +1,11 @@
-# Vue 3 + Vite
+#### lerna 工程初始化
+    lerna init
+#### 添加package
+    lerna add [package]
+    注意：如果生成的package包想再当前应用使用，注意重新npm install下
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+#### 发包
+    第一步： npm login（已登录可省略）
+    第二部： 将需要更新的包代码提交到git仓库
+    第二部： lerna publish [package]
+    
