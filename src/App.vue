@@ -1,8 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import { alertMsg } from 'cibtest-utils'
 let msg = ref('按钮')
 const triggerBtn = () => {
   msg.value = `按钮${Date.now()}`
+  alertMsg('hello world')
 }
 </script>
 
