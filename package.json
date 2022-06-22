@@ -7,6 +7,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "element-plus": "^2.2.6",
     "vue": "^3.2.25"
